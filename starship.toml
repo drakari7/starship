@@ -27,20 +27,18 @@ palette = "tokyo_night"
 [palettes.tokyo_night]
 text = "#e5e9f0"
 blue = "#769ff0"
-sky = "#7aa2f7"
 cyan = "#7dcfff"
 dark_blue = "#394260"
 darker_blue = "#212736"
 deep_blue = "#1d2230"
-muted = "#a0a9cb"
-purple = "#c792ea"
+purple = "#dcc0f5"
 red = "#ff5555"
-salmon = "#f07178"
-yellow = "#f2c96d"
+salmon = "#ff9eaf"
+yellow = "#ffdc87"
 green = "#8bd49c"
 
 [directory]
-style = "fg:text bg:blue"
+style = "fg:deep_blue bg:blue"
 format = "[$path ]($style)[$read_only]($read_only_style)"
 read_only = ""
 read_only_style = 'fg:red bg:blue'
@@ -50,12 +48,12 @@ truncate_to_repo = false
 
 [git_branch]
 symbol = ""
-format = '[ $symbol $branch ](fg:blue bg:dark_blue)'
+format = '[ $symbol $branch ](fg:cyan bg:dark_blue)'
 
 [git_commit]
 style = "bg:dark_blue"
 tag_disabled = false
-format = '[\($hash$tag\)](fg:blue bg:dark_blue)'
+format = '[\($hash$tag\)](fg:cyan bg:dark_blue)'
 
 [git_state]
 style = "bg:dark_blue"
@@ -68,11 +66,11 @@ behind = '[⇣${count}](fg:green bg:dark_blue)'
 diverged = '[⇡${ahead_count}⇣${behind_count}](fg:green bg:dark_blue)'
 
 conflicted = '[~$count](fg:salmon bg:dark_blue)'
-untracked = '[?$count](fg:sky bg:dark_blue)'
+untracked = '[?$count](fg:cyan bg:dark_blue)'
 stashed = '[*$count](fg:purple bg:dark_blue)'
 modified = '[!$count](fg:yellow bg:dark_blue)'
 staged = '[+$count](fg:green bg:dark_blue)'
-renamed = '[»$count](fg:sky bg:dark_blue)'
+renamed = '[»$count](fg:cyan bg:dark_blue)'
 deleted = '[✘$count](fg:salmon bg:dark_blue)'
 style = "bg:dark_blue"
 
@@ -88,4 +86,4 @@ format = '[$duration](fg:text bg:deep_blue)'
 [time]
 disabled = false
 time_format = "%r" # 12-hour with seconds and AM/PM
-format = '[  $time ](fg:muted bg:darker_blue)'
+format = '[  $time ](fg:text bg:darker_blue)'
